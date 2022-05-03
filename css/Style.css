@@ -5,3 +5,11 @@
     height: 200px;
     border-radius: 50%;
 }
+.container01 {
+    width: 1920px;
+    height: 1080px;
+
+};
+.PicRousel {
+    display: flex;
+};

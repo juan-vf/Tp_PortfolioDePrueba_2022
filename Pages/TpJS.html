@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../js/TpJs.js">
+    <script src="../js/TpJs.js"></script>
+    <title>Tp_Js</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><-</a>
+    </header>
+    <section>
+        <article id="Ejercicio 1">
+            <h5>Ejercicio 1</h5> <br> Ingresar tres valores e indicar cual es el mayor y cual el menor. </p>
+            <label for="Ej1_Num1">numero 1</label>
+            <input type="number" id="Ej1_Num1">
+
+            <label for="Ej1_Num2">numero 2</label>
+            <input type="number" id="Ej1_Num2">
+
+            <label for="Ej1_Num3">numero 3</label>
+            <input type="number" id="Ej1_Num3">
+            
+            <button onclick="Func_ej1()">ejecutar</button>
+
+            <label for="Ej1_res">resultado</label>
+            <input type="number" id="Ej1_res" disabled>
+
+            <script>
+                function Func_ej1(){
+                    //alert('me ejecuto dentro de una funcion')//
+                    let Ej1_Num01 = parseFloat(document.getElementById('Ej1_Num1').value);
+                    let Ej1_Num02 = parseFloat(document.getElementById('Ej1_Num2').value);
+                    let Ej1_Num03 = parseFloat(document.getElementById('Ej1_Num3').value);
+
+                    if (Ej1_Num01 > Ej1_Num02 && Ej1_Num01 > Ej1_Num03){
+                        document.getElementById('Ej1_res').value = Ej1_Num01
+                    }else if (Ej1_Num02 > Ej1_Num01 && Ej1_Num02 > Ej1_Num03){
+                        document.getElementById('Ej1_res').value = Ej1_Num02
+                    }else {
+                        document.getElementById('Ej1_res').value = Ej1_Num03
+                    }
+
+                    //let num1 = 9;//
+                    //console.log (num1)//
+                    /*let num2 = 16;
+                    let num3 = 4;*/
+                    /*if (Ej1_Num1 > Ej1_Num2 && Ej1_Num1 > Ej1_Num3){
+                      let ResMyr = (Ej1_Num1,"es el mas grande")
+                    }else if (Ej1_Num2 > Ej1_Num1 && Ej1_Num2 > Ej1_Num3){
+                      let ResMyr =(Ej1_Num2,"es el mas grande")
+                    }else {
+                      let ResMyr =(Ej1_Num3,"es el mas grande")
+                    };*/
+                    
+                    /*if (Ej1_Num1 < Ej1_Num2 && Ej1_Num1 < Ej1_Num3){
+                      console.log (Ej1_Num1,"es el mas chico")
+                    }else if (Ej1_Num2 < Ej1_Num1 && Ej1_Num2 < Ej1_Num3){
+                      console.log(Ej1_Num2,"es el mas chico")
+                    }else {
+                      console.log(Ej1_Num3,"es el mas chico")
+                    };*/
+                    
+                    /*const Resul = Ej1_Num1+Ej1_Num2+Ej1_Num3;
+                    document.getElementById('Ej1_res').value = Resul;*/
+                    };
+
+            </script>
+
+
+
+        </article>
+        <article id="ejercicio 2">
+            <h5>ejercicio 2</h5>
+            <p>Ingresar dos valores, sumarlos y mostrar el resultado en un tercer input.</p>
+            <label for="Ej2_num1"></label>
+            <input type="number" id="Ej2_num1">
+
+            <label for="Ej2_num2"></label>
+            <input type="number" id="Ej2_num2">
+
+            <button onclick="Func_ej2()">ejecutar</button>
+            
+            <label for="Ej2_res">resultado</label>
+            <input type="number" id="Ej2_res" disabled>
+
+
+
+            <script>
+                function Func_ej2(){
+                    //alert('me ejecuto dentro de una funcion')//
+                    let Ej2_num1 = parseFloat(document.getElementById('Ej2_num1').value);
+                    let Ej2_num2 = parseFloat(document.getElementById('Ej2_num2').value);
+
+
+                    let Resul2 = (Ej2_num1+Ej2_num2);
+                    document.getElementById('Ej2_res').value = Resul2;
+
+                };
+           
+
+            </script>
+
+        </article>
+
+        <article id="ejercicio 3">
+            <h5>ejercicio 3</h5>
+            <p>Ingresar una palabra y un numero "n". Repetir la palabra "n" veces.</p>
+
+            <label for="Ej3_tex1"></label>
+            <input type="text" name="" id="Ej3_tex1">
+
+            <label for="Ej3_num1"></label>
+            <input type="number" name="" id="Ej3_num1">
+
+            <button onclick="Func_ej3_for()">ejecutar</button>
+
+                <!--<label for="Ej3_res"></label>
+                <input type="text" name="" id="Ej3_res">-->
+                <p id="textRepea"></p>
+
+                <script>
+                    function Func_ej3_for(){
+                        let Ej3_tex1 = document.getElementById('Ej3_tex1').value;
+                        let Ej3_num1 = document.getElementById('Ej3_num1').value;
+
+
+                        /*for (let Ej3_tex1 = 0; Ej3_tex1 < Ej3_num1; Ej3_tex1++){
+                            //alert ('Ej3_tex1');//
+                            document.write(Ej3_tex1);
+                        };
+
+                        document.getElementById('Ej3_res').value =Resul3;*/
+                        let repText = Ej3_tex1.repeat(Ej3_num1)
+
+                        document.getElementById('textRepea').innerHTML = repText;
+
+                    };
+                </script>
+        </article>
+
+        <article id="ejercicio 4">
+            <h5>ejercicio 4</h5>
+            <p>Realizar un conversor de temperatura: de grados centígrados a Celsius y viceversa. Deberá tener dos input y un botón.</p>
+            
+            <label for="Ej4_Cel">Celcius °C</label>
+            <input type="number" name="" id="Ej4_Cel">
+
+            <!--<button onclick="Func_ej4()">Convertir</button>-->
+
+            <label for="Ej4_Far">Fahrenheit °F</label>
+            <input type="number" name="" id="Ej4_Far" >
+
+            <button onclick="Func_ej4_2()">Convertir</button>
+
+            <p id="TempCon"></p>
+
+            <script>
+                function Func_ej4_2(){
+                    let Ej4_GCel = document.getElementById('Ej4_Cel').value;
+                    let Ej4_GFar = document.getElementById('Ej4_Far').value;
+                                     
+                    /*function validar() {
+                         //obteniendo el valor que se puso en campo text del formulario
+                         miCampoTexto = document.getElementById("miCampo").value;
+                         //la condición
+                         if (miCampoTexto.length == 0) {
+                             return false;
+                         }
+                         return true;
+                    };*/
+
+                    function InEmpty(text){
+                        if (text.length == 0){
+                            return false;
+                        }else{
+                            return true;
+                        }
+                    };
+
+                    if (InEmpty(Ej4_GCel)){
+                        let conver = ((Ej4_GCel*1.8)+32);
+
+                     document.getElementById('TempCon').innerHTML = Ej4_GCel+" grados °C  son "+conver+" grados °F";
+
+                    }else if (InEmpty(Ej4_GFar)){
+                        let converF = ((Ej4_GFar-32)/1.8);
+
+                     document.getElementById('TempCon').innerHTML = Ej4_GFar+" grados °F  son "+converF+" grados °C";
+                    };
+
+                    /*if (Ej4_GCel !== 0){
+                        let conver = ((Ej4_GCel*1.8)+32);
+
+                     document.getElementById('TempCon').innerHTML = Ej4_GCel+" grados °C  son "+conver+" grados °F";
+                    }else if (Ej4_GFar !== 0){
+                        let converF = ((Ej4_GFar-32)/1.8);
+                        /*console.log(converF)*/
+
+                     /*document.getElementById('TempCon').innerHTML = Ej4_GFar+" grados °F  son "+converF+" grados °C";
+                    }*/
+
+
+
+                };
+            </script>
+
+            
+
+        <!--<script>
+                function Func_ej4(){
+                    let Ej4_GCel = parseFloat(document.getElementById('Ej4_Cel').value);
+                    /*let Ej4_GFar = parseFloat(document.getElementById('Ej4_Far').value);*/
+
+                    let conver = ((Ej4_GCel*1.8)+32);
+
+                    document.getElementById('Ej4_Far').value = conver;
+                };
+            </script>-->
+
+        </article>
+        
+        <article id="ejercicio 5">
+            <h5>ejercicio 5</h5>
+            <p>Ingresar una palabra y mostrar: < PALABRA > tiene < n > letras.</p>
+
+                <label for="Ej5_text"></label>
+                <input type="text" id="Ej5_text">
+
+                <button onclick="Func_ej5()">ejecutar</button>
+
+                <label for="Ej5_res"></label>
+                <input type="number" id="Ej5_res">
+
+                <script>
+                    function Func_ej5(){
+                        let Ej5_Cont = document.getElementById('Ej5_text').value;
+                        console.log(Ej5_Cont)
+                        let Ej5_Cont2 = Ej5_Cont.length;
+                        console.log("el string tiene"+" "+Ej5_Cont.length+" "+"caracteres");
+                        
+                        document.getElementById('Ej5_res').value = Ej5_Cont2;
+                    };
+                </script>
+
+        </article>
+
+        <article id="ejercicio 6">
+            <h6>ejercicio 6</h6>
+            <p>Ingresar un número e indicar si es par.</p>
+
+            <label for="Ej6_num"></label>
+            <input type="number" id="Ej6_num">
+
+            <button onclick="Func_ej6()">ejecutar</button>
+
+            <label for="Ej6_res"></label>
+            <input type="text" id="Ej6_res" disabled>
+
+            <script>
+                
+                function Func_ej6(){
+                    let Ej6_number = document.getElementById('Ej6_num').value;
+
+                    if (Ej6_number%2==0){
+                        document.getElementById('Ej6_res').value = "el numero"+" "+Ej6_number+" "+"es par";
+                    }else {
+                        document.getElementById('Ej6_res').value = "el numero"+" "+Ej6_number+" "+"es impar";
+                    }
+                };
+
+            </script>
+
+
+        </article>
+
+        <article id="ejercicio 7">
+            <h5>ejercicio 7</h5>
+            <p>Ingresar dos números y mostrar los múltiplos de 3 comprendidos entre ambos.</p>
+
+            <label for="Ej7_num1"></label>
+            <input type="number" id="Ej7_num1">
+
+            <label for="Ej7_num2"></label>
+            <input type="number" id="Ej7_num2">
+
+            <button onclick="Func_ej7()">ejecutar</button>
+
+            <script>
+                function Func_ej7(){
+                let Ej7_number1 = document.getElementById('Ej7_num1').value;
+                let Ej7_number2 = document.getElementById('Ej7_num2').value;
+
+
+                /*if (Ej7_number1 < Ej7_number2 && Ej7_number1>0){
+                    for (let ejec=Ej7_number1;ejec%3==0; ejec++){};
+                    console.log(ejec)
+
+                };*/
+
+                /*while (){
+
+                };*/
+                /*let ejec = Ej7_number1*/
+                /*for (let ejec=Ej7_number1; (ejec<=Ej7_number2 && ejec%3==0); ejec++){
+                    console.log(ejec);
+                };*/
+
+                };
+            </script>
+
+        </article>
+
+        <article id="ejercicio 8">
+            <h5>ejercicio 8</h5>
+            <p>Mostrar los números primos hasta un número ingresado por el usuario.</p>
+
+            <label for="Ej8_LimiP"></label>
+            <input type="number" name="" id="Ej8_LimiP">
+
+            <button onclick="esPrimoLimit()">Primos</button>
+
+            <p id="NumPri"></p>
+
+        <!--<button onclick="Func_ej8()">ejecutar</button>-->
+
+            <p id="LNumP"></p>
+
+            <script>
+
+                function esPrimoLimit(){
+                    let Ej8_nP = document.getElementById('Ej8_LimiP').value;
+
+                    for(let num = 2; num <= Ej8_nP ; num++){
+                        let esPrimo = true;
+
+                        for (let divisor = 2; divisor < num; divisor++){
+                            if (num % divisor === 0){
+                                esPrimo = false;
+                                break;
+                            }
+            
+                        }
+
+                        if (esPrimo) {
+                            
+                            console.log(num)
+                            document.getElementById('NumPri').innerHTML = prim;
+                            let Ej8_nP = document.getElementById('NumPri').value= num;
+                        } 
+                    }
+
+
+                };
+
+                function Func_ej8(){
+                    let Ej8_nP = document.getElementById('Ej8_LimiP').value;
+
+
+
+
+                };
+            </script>
+
+
+        </article>
+
+        <article id="ejercicio 9">
+            <h5>ejercicio 9</h5>
+            <p>Ingresar un nombre, un apellido, una edad y un ciudad de nacimiento,  crear un párrafo y completar la siguiente frase:
+                "Mi nombre es NOMBRE APELLIDO, tengo EDAD años. Nací en la ciudad de CIUDAD."</p>
+
+                <label for="Ej9_nme">nombre</label>
+                <input type="text" name="" id="Ej9_nme">
+                
+                <label for="Ej9_apell">apellido</label>
+                <input type="text" name="" id="Ej9_apell">
+
+                <label for="Ej9_edad">edad</label>
+                <input type="number" name="" id="Ej9_edad">
+
+                <label for="Ej9_ciudad">ciudad</label>
+                <input type="text" name="" id="Ej9_ciudad">
+
+                <button onclick="Func_ej9()">ejecutar</button>
+
+                <p id="Text"></p>
+
+                <script>
+
+                    function Func_ej9(){
+                        let Ej9_nombre = document.getElementById('Ej9_nme').value;
+                        let Ej9_apellido = document.getElementById('Ej9_apell').value;
+                        let Ej9_age = document.getElementById('Ej9_edad').value;
+                        let Ej9_city = document.getElementById('Ej9_ciudad').value;
+
+                        let frase = ("Mi nombre es"+" "+Ej9_nombre+" "+Ej9_apellido+", "+"tengo"+" "+Ej9_age+" "+" años. Nací en la ciudad de"+" "+Ej9_city)
+
+                        document.getElementById('Text').innerHTML = frase;
+
+                    };
+                </script>
+
+
+        </article>
+
+        <article>
+            <h5>ejercicio 10</h5>
+            <p>Ingresar dos valores enteros y enumerar los elementos que los separan. 
+                Ejemplo 1: 2 y 6 --> 3 , 4, 5
+                Ejemplo 2: 10 y 5 --> 9, 8, 7, 6
+                </p>
+        </article>
+    </section>
+</body>
+</html>
