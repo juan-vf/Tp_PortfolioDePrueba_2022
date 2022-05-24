@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../js/TpJs.js">
-    <script src="../js/TpJs.js"></script>
+    <!--<link rel="stylesheet" href="../js/TpJs.js">-->
+    <script src="../js/functionalities.js"></script>
     <title>Tp_Js</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
             <label for="Ej1_res">resultado</label>
             <input type="number" id="Ej1_res" disabled>
 
-            <script>
+            <!--<script>
                 function Func_ej1(){
                     //alert('me ejecuto dentro de una funcion')//
                     let Ej1_Num01 = parseFloat(document.getElementById('Ej1_Num1').value);
@@ -68,7 +68,7 @@
                     document.getElementById('Ej1_res').value = Resul;*/
                     };
 
-            </script>
+            </script>-->
 
 
 
@@ -89,7 +89,7 @@
 
 
 
-            <script>
+            <!--<script>
                 function Func_ej2(){
                     //alert('me ejecuto dentro de una funcion')//
                     let Ej2_num1 = parseFloat(document.getElementById('Ej2_num1').value);
@@ -102,7 +102,7 @@
                 };
            
 
-            </script>
+            </script>-->
 
         </article>
 
@@ -122,7 +122,7 @@
                 <input type="text" name="" id="Ej3_res">-->
                 <p id="textRepea"></p>
 
-                <script>
+                <!--<script>
                     function Func_ej3_for(){
                         let Ej3_tex1 = document.getElementById('Ej3_tex1').value;
                         let Ej3_num1 = document.getElementById('Ej3_num1').value;
@@ -139,7 +139,7 @@
                         document.getElementById('textRepea').innerHTML = repText;
 
                     };
-                </script>
+                </script>-->
         </article>
 
         <article id="ejercicio 4">
@@ -158,7 +158,7 @@
 
             <p id="TempCon"></p>
 
-            <script>
+            <!--<script>
                 function Func_ej4_2(){
                     let Ej4_GCel = document.getElementById('Ej4_Cel').value;
                     let Ej4_GFar = document.getElementById('Ej4_Far').value;
@@ -206,7 +206,7 @@
 
 
                 };
-            </script>
+            </script>-->
 
             
 
@@ -235,7 +235,7 @@
                 <label for="Ej5_res"></label>
                 <input type="number" id="Ej5_res">
 
-                <script>
+                <!--<script>
                     function Func_ej5(){
                         let Ej5_Cont = document.getElementById('Ej5_text').value;
                         console.log(Ej5_Cont)
@@ -244,7 +244,7 @@
                         
                         document.getElementById('Ej5_res').value = Ej5_Cont2;
                     };
-                </script>
+                </script>-->
 
         </article>
 
@@ -260,7 +260,7 @@
             <label for="Ej6_res"></label>
             <input type="text" id="Ej6_res" disabled>
 
-            <script>
+            <!--<script>
                 
                 function Func_ej6(){
                     let Ej6_number = document.getElementById('Ej6_num').value;
@@ -272,7 +272,7 @@
                     }
                 };
 
-            </script>
+            </script>-->
 
 
         </article>
@@ -289,7 +289,7 @@
 
             <button onclick="Func_ej7()">ejecutar</button>
 
-            <script>
+            <!--<script>
                 function Func_ej7(){
                 let Ej7_number1 = document.getElementById('Ej7_num1').value;
                 let Ej7_number2 = document.getElementById('Ej7_num2').value;
@@ -310,7 +310,7 @@
                 };*/
 
                 };
-            </script>
+            </script>-->
 
         </article>
 
@@ -329,7 +329,7 @@
 
             <p id="LNumP"></p>
 
-            <script>
+            <!--<script>
 
                 function esPrimoLimit(){
                     let Ej8_nP = document.getElementById('Ej8_LimiP').value;
@@ -363,7 +363,7 @@
 
 
                 };
-            </script>
+            </script>-->
 
 
         </article>
@@ -413,6 +413,82 @@
                 Ejemplo 1: 2 y 6 --> 3 , 4, 5
                 Ejemplo 2: 10 y 5 --> 9, 8, 7, 6
                 </p>
+
+
+                <label for="Ej10_num1">Entero 1</label>
+                <input type="number" name="" id="Ej10_num1">
+
+                <label for="Ej10_num2">Entero 2</label>
+                <input type="number" name="" id="Ej10_num2">
+
+                <button onclick="FuncEj10()">ejecutar</button>
+
+                <p id="res10"></p>
+
+
+        </article>
+
+
+        <article>
+
+            <h5>Test</h5>
+
+            <label for="Test_num1"></label>
+            <input type="number" name="" id="Test_num1">
+
+            <label for="Test_num2"></label>
+            <input type="number" name="" id="Test_num2">
+
+            <button onclick="Ejec()">ejecutar</button>
+
+            <p id="res"></p>
+            <label for="Test_res"></label>
+            <input type="number" name="" id="Test_res">
+            <script>
+                /*const obj={
+                    array: new Array();
+
+                };*/
+
+                let array1 = new Array();
+                let array2 = [];
+
+                function Ejec(){
+                    let Test_num01 = document.getElementById('Test_num1').value;
+                    let Test_num02 = document.getElementById('Test_num2').value;
+
+                    /*for(let i = Test_num01; i <= Test_num02; i++){
+                        obj.array[i] = i;
+                        console.log('hola')
+                        document.getElementById('res').value = i;
+                    };*/
+
+                    for(let i = Test_num01; i < Test_num02; i++){
+                        array1[i] = i;
+                        let box = i;
+
+                        console.log(box);
+                        /*document.write(box)*/
+                        document.getElementById('res').innerHTML = (array1[i]);
+                        document.getElementById('Test_res').value = box;
+                        /*document.write(array1[i]);*/
+                    };
+                };
+
+
+            </script>
+        </article>
+
+        <article id="Test">
+            <h5>test</h5>
+
+            <label for="test"></label>
+
+
+            <p id="awsner"></p>
+
+
+
         </article>
     </section>
 </body>
