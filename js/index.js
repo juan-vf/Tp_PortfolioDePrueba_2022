@@ -2,10 +2,10 @@ import { Preloads } from "./scenes/preloads.js";
 import { MainMenu } from "./scenes/mainmenu.js";
 import { Play } from "./scenes/play.js";
 import { Retry } from "./scenes/retry.js";
-import { Level2 } from "./scenes/lvl2.js"
-import { Elec } from "./scenes/Elec.js"
-import { Elec2 } from "./scenes/Elec2.js"
-import { Level3 } from "./scenes/lvl3.js"
+import { Level2 } from "./scenes/lvl2.js";
+import { Elec } from "./scenes/Elec.js";
+import { Elec2 } from "./scenes/Elec2.js";
+import { Level3 } from "./scenes/lvl3.js";
 
 
 var config = {
